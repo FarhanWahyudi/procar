@@ -104,7 +104,7 @@
             <h3 class="font-semibold text-amber-400 text-lg lg:text-xl">Unit Kami</h3>
             <h1 class="font-semibold text-2xl lg:text-4xl">Pilihan Mobil <span class="text-amber-400">Terbaik</span> Untuk Anda.</h1>
         </div>
-        <div class="grid grid-cols-1 gap-20 mt-10 lg:mt-20 md:grid-cols-2 md:gap-10 lg:grid-cols-3 2xl:gap-20">
+        <div class="grid grid-cols-1 gap-10 mt-10 lg:mt-20 md:grid-cols-2 lg:grid-cols-3 2xl:gap-20">
             <div class="flex flex-col items-center shadow-md shadow-gray-400 rounded-xl">
                 <div class="flex flex-col gap-7 items-center px-5 py-8">
                     <h1 class="text-xl font-semibold">Daihatsu Ayla</h1>
@@ -150,7 +150,7 @@
                 <h1 class="bg-black w-full py-5 text-white text-center font-semibold text-base sm:text-lg">Rp 350.000 / perhari</h1>
                 <button class="px-10 py-3 bg-amber-400 rounded-lg font-semibold my-8 text-sm sm:text-base cursor-pointer hover:bg-amber-300 transition-all duration-500">Pesan Sekarang</button>
             </div>
-            <div class="flex flex-col items-center shadow-md shadow-gray-400 rounded-xl">
+            <div class="more-content opacity-0 -translate-y-full hidden flex-col items-center shadow-md shadow-gray-400 rounded-xl transition-all duration-700 md:opacity-100 md:translate-y-0 md:flex md:static">
                 <div class="flex flex-col gap-7 items-center px-5 py-8">
                     <h1 class="text-xl font-semibold">Daihatsu Xenia</h1>
                     <img src="./assets/cars/daihatsu-xenia.png" alt="daihatsu-xenia">
@@ -165,7 +165,7 @@
                 <h1 class="bg-black w-full py-5 text-white text-center font-semibold text-base sm:text-lg">Rp 450.000 / perhari</h1>
                 <button class="px-10 py-3 bg-amber-400 rounded-lg font-semibold my-8 text-sm sm:text-base cursor-pointer hover:bg-amber-300 transition-all duration-500">Pesan Sekarang</button>
             </div>
-            <div class="flex flex-col items-center shadow-md shadow-gray-400 rounded-xl">
+            <div class="more-content opacity-0 -translate-y-full hidden flex-col items-center shadow-md shadow-gray-400 rounded-xl transition-all duration-700 md:opacity-100 md:translate-y-0 md:flex md:static">
                 <div class="flex flex-col gap-7 items-center px-5 py-8">
                     <h1 class="text-xl font-semibold">Suzuki Ertiga</h1>
                     <img src="./assets/cars/suzuki-ertiga.jpg" alt="suzuki-ertiga">
@@ -180,7 +180,7 @@
                 <h1 class="bg-black w-full py-5 text-white text-center font-semibold text-base sm:text-lg">Rp 450.000 / perhari</h1>
                 <button class="px-10 py-3 bg-amber-400 rounded-lg font-semibold my-8 text-sm sm:text-base cursor-pointer hover:bg-amber-300 transition-all duration-500">Pesan Sekarang</button>
             </div>
-            <div class="flex flex-col items-center shadow-md shadow-gray-400 rounded-xl">
+            <div class="more-content opacity-0 -translate-y-full hidden flex-col items-center shadow-md shadow-gray-400 rounded-xl transition-all duration-700 md:opacity-100 md:translate-y-0 md:flex md:static">
                 <div class="flex flex-col gap-7 items-center px-5 py-8">
                     <h1 class="text-xl font-semibold">Toyota Avanza</h1>
                     <img src="./assets/cars/toyota-avanza.jpg" alt="toyota-avanza">
@@ -195,6 +195,9 @@
                 <h1 class="bg-black w-full py-5 text-white text-center font-semibold text-base sm:text-lg">Rp 450.000 / perhari</h1>
                 <button class="px-10 py-3 bg-amber-400 rounded-lg font-semibold my-8 text-sm sm:text-base cursor-pointer hover:bg-amber-300 transition-all duration-500">Pesan Sekarang</button>
             </div>
+        </div>
+        <div class="flex justify-center">
+            <button id="show-more-btn" class="px-10 py-3 bg-amber-400 rounded-lg font-semibold mt-16 text-sm sm:text-base cursor-pointer hover:bg-amber-300 transition-all duration-500 md:hidden">Lihat Selengkapnya</button>
         </div>
     </section>
 
@@ -362,5 +365,6 @@
 
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/menu.js"></script>
+    <script src="./src/js/show-more.js"></script>
 </body>
 </html>
