@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,32 @@
 <body class="font-poppins">
     
     <!-- NAVBAR -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full px-5 py-3 z-10 sm:px-16 lg:px-16 xl:py-2 xl:px-40">
+    <nav id="navbar" class="fixed top-0 left-0 w-full px-5 py-3 z-10 sm:px-16 lg:px-16 xl:py-2 xl:px-40 transition-all duration-300">
         <div class="flex justify-between items-center">
-            <div class="flex flex-col items-center">
+            <div class="flex flex-row items-center lg:flex-col">
                 <img src="./assets/icons/procar-icon.png" alt="procar-icon" class="w-8">
-                <h1 class="text-amber-400 text-xl font-bold -mt-2">ProCar</h1>
+                <h1 class="text-amber-400 text-xl font-bold lg:-mt-2">ProCar</h1>
             </div>
-            <ul class="hidden gap-20 text-white font-semibold text-lg lg:flex">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#unit">Unit</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="unordered-list" class="gap-20 hidden text-white font-semibold text-lg lg:flex lg:flex-row lg:bg-transparent lg:static lg:w-auto lg:h-auto">
+                <li><a href="#home" class="nav-link-current">Home</a></li>
+                <li><a href="#about" class="nav-link-current">About Us</a></li>
+                <li><a href="#unit" class="nav-link-current">Unit</a></li>
+                <li><a href="#reviews" class="nav-link-current">Reviews</a></li>
+                <li><a href="#contact" class="nav-link-current">Contact</a></li>
             </ul>
+            <ul id="unordered-list-mobile" class="absolute -translate-y-full hidden w-full h-screen flex-col items-center justify-center top-0 left-0 bg-amber-400 gap-10 text-white font-semibold text-lg transition-all duration-300">
+                <li><a href="#home" class="nav-link nav-link-mobile">Home</a></li>
+                <li><a href="#about" class="nav-link nav-link-mobile">About Us</a></li>
+                <li><a href="#unit" class="nav-link nav-link-mobile">Unit</a></li>
+                <li><a href="#reviews" class="nav-link nav-link-mobile">Reviews</a></li>
+                <li><a href="#contact" class="nav-link nav-link-mobile">Contact</a></li>
+            </ul>
+            <div id="menu" class="flex justify-center items-center text-blue w-8 h-8 rounded-md bg-amber-400 text-white z-10 md:w-10 md:h-10 lg:hidden">
+                <svg id="burger" class="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg id="close" class="hidden font-bold w-4 h-4" stroke="currentColor" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path fill="currentColor" d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"></path>
+                </svg>
+            </div>
         </div>
     </nav>
 
@@ -335,5 +348,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/menu.js"></script>
 </body>
 </html>
